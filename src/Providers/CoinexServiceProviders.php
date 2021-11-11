@@ -3,6 +3,7 @@
 namespace Coinex\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use \Coinex\CoinexApi;
 
 class CoinexServiceProviders extends ServiceProvider
 {
@@ -15,7 +16,7 @@ class CoinexServiceProviders extends ServiceProvider
     public function register()
     {
         $this->app->bind('coinex',function() {
-            return new Coinex/CoinexApi;
+            return new CoinexApi;
         });
     }
 }
