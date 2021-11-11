@@ -1,0 +1,29 @@
+{
+    "name": "sadeghpro/coinex_api",
+    "description": "coinex rest api for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sadeghpro",
+            "email": "sadeghmohamadnia@yahoo.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Coinex\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Coinex\\Provider\\CoinexServiceProvider"
+            ],
+            "aliases": {
+                "CoinexApi": "Coinex\\CoinexApi"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
