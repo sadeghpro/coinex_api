@@ -15,7 +15,7 @@ class CoinexServiceProviders extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('coinex',function() {
+        $this->app->bind('coinex_api',function() {
             return new CoinexApi;
         });
     }
