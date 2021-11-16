@@ -191,6 +191,19 @@ class CoinexApi
         return Http::get($url);
     }
 
+    public function getAllMarketsData() : Response
+    {
+        $url = "https://api.coinex.com/v1/market/ticker/all";
+        return Http::get($url);
+    }
+
+
+    public function getAssetSetting() : Response
+    {
+        $url = "https://www.coinex.com/res/account/asset/setting";
+        return Http::get($url);
+    }
+
     public function getMarketData($market) : Response
     {
         $params = [
